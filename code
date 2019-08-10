@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int i,p,net,total;
+
+   scanf("%d",&net);
+   scanf("%d",&p);
+   total=net;
+   int n=0;
+   while(net!=0)
+   {
+      
+        net=(int)(net-((net*p*1.0)/100));
+        total=total+net;
+       
+   }
+   printf("%d",total);
+
+    return 0;
+}
